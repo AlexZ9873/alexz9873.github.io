@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Confirmation | Alex Zhang Portfolio</title>
+    <meta name="description" content="Confirmation page for Alex Zhang's computational biology and machine learning portfolio contact form, summarizing submitted connection information and linking back to academic history, projects, skills, and contact sections.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div id="scroll-progress" aria-hidden="true"></div>
+
+    <div id="page">
+        <header id="topbar">
+            <h1>Alex Zhang</h1>
+            <p>Computational Biology | Machine Learning | Genomics | Biomedical Engineering</p>
+        </header>
+
+        <nav id="nav" aria-label="Main navigation">
+            <a href="index.html#hero">Home</a>
+            <a href="index.html#about">Academic History</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#connect">Connect</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <main>
+            <section class="section confirmation-section">
+                <p class="eyebrow">Submission confirmation</p>
+                <h2>Thank You for Reaching Out<span id="thank-you-name"></span></h2>
+                <p class="section-intro">
+                    Your form was submitted successfully to this confirmation page. Because this is a static portfolio site, the form does not automatically store or send your information through a server.
+                </p>
+
+                <div class="confirmation-card">
+                    <h3>Submitted Information</h3>
+                    <div class="submitted-details">
+                        <dl>
+                            <dt>Name</dt>
+                            <dd id="summary-name">Not provided</dd>
+
+                            <dt>Company / Institution</dt>
+                            <dd id="summary-institution">Not provided</dd>
+
+                            <dt>Email</dt>
+                            <dd id="summary-email">Not provided</dd>
+
+                            <dt>Topic</dt>
+                            <dd id="summary-topic">Not provided</dd>
+
+                            <dt>Note</dt>
+                            <dd id="summary-note">Not provided</dd>
+                        </dl>
+                    </div>
+
+                    <div class="confirmation-actions">
+                        <a class="primary-btn" id="email-draft-link" href="mailto:alexz@usc.edu">Email Alex Directly</a>
+                        <a class="secondary-btn" href="homepage.html#projects">Return to Projects</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <p>Thanks for visiting &mdash; I build across computation, biology, and engineering with curiosity, precision, and a focus on useful scientific work.</p>
+        </footer>
+    </div>
+</body>
+</html>
